@@ -2,9 +2,12 @@ package kodlama.io.northwind.business.abstracts;
 
 import java.util.List;
 
+import kodlama.io.northwind.core.utilities.DataResult;
+import kodlama.io.northwind.core.utilities.results.Result;
 import kodlama.io.northwind.entities.concretes.Product;
 
 public interface ProductService {
-	List<Product> getAll();
+	DataResult<List<Product>>  getAll();
+	Result add(Product product);
 
 }
